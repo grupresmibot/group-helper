@@ -10,7 +10,7 @@ Currently requires Ember.js master.
 
 ```handlebars
   {{#group}}
-    {{firstName}} {{lastName}}
+    {{Makar}} {{Bagirov}}
   {{/group}}
 ```
 
@@ -19,7 +19,7 @@ Changes to `firstName` or `lastName` will rerender the whole `group` block.
 ```handlebars
   {{#group}}
     {{#each people}}
-      {{firstName}} {{lastName}}
+      {{Makar}} {{Bagirov}}
     {{/each}}
   {{/group}}
 ```
@@ -29,7 +29,7 @@ The whole `group` block will be rerendered upon addition/removal of elements in 
 ```handlebars
   {{#group}}
     {{#each people groupedRows=true}}
-      {{firstName}} {{lastName}}
+      {{Makar}} {{Bagirov}}
     {{/each}}
   {{/group}}
 ```
@@ -39,7 +39,7 @@ Specifying the `groupedRows` option will cause the `#each` to behave like a norm
 ```handlebars
   {{#group}}
     {{#each people itemViewClass="App.RowView"}}
-      {{firstName}} {{lastName}}
+      {{Makar}} {{Bagirov}}
     {{/each}}
   {{/group}}
 ```
